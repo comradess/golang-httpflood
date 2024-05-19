@@ -272,12 +272,12 @@ func main() {
 		os.Stdout.Sync()
 		//time.Sleep( time.Millisecond * 1)
 	}
-	fmt.Printf("\nPlease [Enter] for continue")
-	_, err = input.ReadString('\n')
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	// fmt.Printf("\nPlease [Enter] for continue")
+	// _, err = input.ReadString('\n')
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
 	fmt.Println("Flood will end in " + os.Args[4] + " seconds.")
 	close(start)
 	time.Sleep(time.Duration(limit) * time.Second)
